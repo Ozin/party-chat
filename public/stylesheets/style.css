@@ -1,0 +1,84 @@
+/*
+html.list {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+*/
+
+body {
+  background: #DDD;
+  margin: 0;
+  font-family: "Roboto", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+body.list {
+  display: flex;
+  justify-content: center;
+}
+
+div.inputForm > * {
+  margin: 2rem;
+}
+
+#messages {
+  /* position: relative;
+  justify-content: flex-end;
+  */
+  --padding: 1rem;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: auto;
+  height: calc(100vh - (var(--padding) * 2));
+  width: 40rem;
+}
+
+form > * {
+  background: #FFF;
+  border: 1px solid #AAA; 
+  box-shadow: 0 .3rem .9rem rgba(0,0,0,0.2);
+  margin-bottom: .5rem;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 6rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: 0;
+  height: 2rem;
+}
+
+#messages p {
+  margin: .4rem 0;
+}
+
+#messages div {
+  background: #F8F8F8;
+  border-radius: .5rem;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0rem .3rem .9rem rgba(0,0,0,0.4);
+}
+
+#messages div :first-child {
+  margin-top: 0;
+}
+
+#messages div :last-child {
+  margin-bottom: 0;
+}
+
+.emoji {
+  font-size: 2em;
+}

@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  div.inputForm
+    h1= title
+    p Welcome to #{title}
+    form(method='POST' action='/')
+      textarea(id='text' name='text' autofocus='autofocus')
+      input(type='submit')
